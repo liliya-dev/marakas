@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  padding: 2% 5% 4%;
+}
+
+.button {
+  background-color: white;
+  border: none; 
+  outline: none;
+  transition: transform 1s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

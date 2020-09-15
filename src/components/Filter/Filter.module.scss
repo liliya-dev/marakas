@@ -1,0 +1,42 @@
+.container {
+  width: 25%;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border: 1px solid rgb(190, 187, 187);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  width: 100%;
+  padding: 0 15px;
+  height: 50px;
+}
+
+.list {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  border: 1px solid rgb(190, 187, 187);
+  border-top: none;
+  padding: 0 15px;
+  background-color: rgb(255, 250, 250);
+  background-color: white;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.item {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  width: 15px;
+  height: 15px;
+}

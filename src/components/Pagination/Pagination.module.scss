@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.buttonNonActive {
+  width: 25px;
+  height: 25px;
+  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+  border: none;
+  margin-right: 10px;
+  outline: none;
+  background-color: black;
+  color: white;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.buttonActive {
+  width: 25px;
+  height: 25px;
+  font-family: 'Architects Daughter', cursive;
+  margin-right: 10px;
+  outline: none;
+  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+  border: none;
+  background-color: white;
+  color: black;
+}
