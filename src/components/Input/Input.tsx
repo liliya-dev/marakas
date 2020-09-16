@@ -88,7 +88,7 @@ export const Input: React.FC<Props> = ({ setFilterOption }) => {
           Search
         </button>
       </div>
-      <p>{error}</p>
+      <span className={styles.error}>{error}</span>
       {
         isHistoryVisible && (
           <HistoryList setNewValue={setNewValue}setVisibility={setVisibility} />

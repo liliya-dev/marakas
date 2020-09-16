@@ -1,26 +1,29 @@
 
 .wrapper {
-  width: 100%;
   position: absolute;
   top: 50px;
   z-index: 3;
   width: 80%;
+  padding: 15px;
+  max-height: 200px;
+  overflow-y: scroll;
+
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 15px;
+  
   background-color: white;
   border: 1px solid rgb(190, 187, 187);
-  max-height: 200px;
-  overflow-y: scroll;
 }
 
 .button {
   position: sticky;
   right: 0px;
   top: 5px;
+
   background-color: red;
   color: white;
+  
   border: none;
   outline: none;
 }

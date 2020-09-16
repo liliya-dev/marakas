@@ -3,7 +3,9 @@
   height: 50px;
   padding: 0 15px;
   position: relative;
+
   outline: none;
+
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   background-color: white;
   border: 1px solid rgb(190, 187, 187);
@@ -11,9 +13,10 @@
 
 .main {
   display: flex;
-  width: 55%;
   justify-content: space-between;
   align-items: center;
+
+  width: 55%;
   margin-top: 40px;
   position: relative;
 }
@@ -21,9 +24,11 @@
 .container {
   position: relative;
   width: 100%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   z-index: 2;
   margin-bottom: 30px;
 }
@@ -32,10 +37,18 @@
   background-color: black;
   box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
   color: white;
+
   outline: none;
   border: none;
-  height: 50px;
   border-radius: 10px;
+  
+  height: 50px;
+}
+
+.error {
+  position: absolute;
+  bottom: -20px;
+  color: red;
 }
 
 .historyButton {

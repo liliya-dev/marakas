@@ -1,19 +1,21 @@
 .container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+
   width: 30%;
   min-width: 300px;
-  flex-wrap: wrap;
   margin-bottom: 40px;
 }
 
 .button {
   width: 25px;
   height: 25px;
-  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
-  border: none;
   margin-right: 10px;
   margin-bottom: 10px;
+
+  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+  border: none;
   outline: none;
 }
 
