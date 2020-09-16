@@ -14,7 +14,7 @@ export const Filter: React.FC<Props> = ({
 }) => {
   const [isVisible, setIsVisible] = useState(false);
   return (
-   <div className={styles.container}>
+   <button className={styles.container} onBlur={() => setIsVisible(false)}>
      <p>{type === 'genre' ? 'Choose the genre' : 'Sort by'}</p>
     <div 
       className={styles.header}
@@ -45,6 +45,6 @@ export const Filter: React.FC<Props> = ({
           </ul>
        )
      }
-   </div>
+   </button>
   )
 }

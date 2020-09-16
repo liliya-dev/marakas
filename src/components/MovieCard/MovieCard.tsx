@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { MovieFromServer } from '../../interfaces';
 import styles from './MovieCard.module.scss';
+import poster from './poster.png';
 
 interface Props {
   movie: MovieFromServer;
@@ -13,7 +14,7 @@ export const MovieCard: React.FC<Props> = ({ movie }) => {
     <NavLink to={`movies/${movie.imdbID}`} className={styles.container}>
       <img
         className={styles.image}
-        src={movie.Poster}
+        src={movie.Poster === 'N/A' ? poster : movie.Poster}
         alt="Film logo"
       />
       <h3>{movie.Title}</h3>

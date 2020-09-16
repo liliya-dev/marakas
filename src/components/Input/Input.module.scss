@@ -1,0 +1,64 @@
+.input {
+  width: 80%;
+  height: 50px;
+  padding: 0 15px;
+  position: relative;
+  outline: none;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  background-color: white;
+  border: 1px solid rgb(190, 187, 187);
+}
+
+.main {
+  display: flex;
+  width: 55%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  position: relative;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  margin-bottom: 30px;
+}
+
+.search {
+  background-color: black;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+  color: white;
+  outline: none;
+  border: none;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.historyButton {
+  position: absolute;
+  left: 73%;
+  top: 12px;
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 6%;
+  }
+
+  .input {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}

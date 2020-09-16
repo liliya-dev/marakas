@@ -34,7 +34,11 @@ export const MoviePage: React.FC<Props> = ({ id }) => {
         movie ? (
           <>
             <div className={styles.top}>
-              <img src={movie.Poster} alt={movie.Title} />
+              <img 
+                src={movie.Poster} 
+                alt={movie.Title} 
+                className={styles.image}
+              />
               <div className={styles.description}>
                 <p><span className={styles.title}>Actors:</span> {movie.Actors}</p>
                 <p><span className={styles.title}>Runtime:</span> {movie.Runtime}</p>

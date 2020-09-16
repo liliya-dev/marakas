@@ -24,3 +24,24 @@
 .movie {
   margin-bottom: 30px;
 }
+
+.image {
+  border-radius: 10px;
+  width: 50%;
+  max-width: 350px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .top {
+    flex-direction: column;
+    align-items: center;
+  }
+  .description {
+    width: 100%;
+  }
+
+  .image {
+    margin-bottom: 20px;
+  }
+}

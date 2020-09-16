@@ -2,7 +2,6 @@ import React from 'react';
 import { Filter } from '../Filter/Filter';
 import up from './up.png';
 import down from './down.png';
-import { Search } from '../Search/Search';
 import styles from './TopBar.module.scss';
 
 interface Props {
@@ -10,11 +9,10 @@ interface Props {
   sortBy: string;
   order: string;
   setFilterOption: (option: string, type: string) => (void);
-  query: string;
 }
 
 export const TopBar: React.FC<Props> = ({ 
-  genre, setFilterOption, sortBy, order, query
+  genre, setFilterOption, sortBy, order
 }) => {
   return (
     <div className={styles.container}>
@@ -30,7 +28,6 @@ export const TopBar: React.FC<Props> = ({
         setFilterOption={setFilterOption}
         type='sortBy'
       />
-      <Search query={query} setFilterOption={setFilterOption} />
       <button 
         className={styles.button}
         type="button"

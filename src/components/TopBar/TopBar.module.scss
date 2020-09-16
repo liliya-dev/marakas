@@ -11,8 +11,16 @@
   border: none; 
   outline: none;
   transition: transform 1s;
+  margin-bottom: 30px;
 
   &:hover {
     transform: scale(1.05);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
 }
