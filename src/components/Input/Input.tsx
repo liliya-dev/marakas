@@ -30,6 +30,7 @@ export const Input: React.FC<Props> = ({ setFilterOption }) => {
       dispatch(setLoading(true));
       try {
         const data = await fetchData(value);
+        console.log(data)
         dispatch(setMessage(''));
         if (data.Search) {
           const pageQuantity = (+data.totalResults / 10 >= 10) ? 10 : Math.ceil(+data.totalResults / 10);
@@ -39,7 +40,11 @@ export const Input: React.FC<Props> = ({ setFilterOption }) => {
             dispatch(setMovies(data.Search));
           });
         } else {
-          dispatch(setMessage(`There are no movies with ${value} title`))
+          if (data.Response === 'False') {
+            dispatch(setMessage('Something went wrong, please try again'))
+          } else {
+            dispatch(setMessage(`There are no movies with ${value} title`))
+          }
         }
         setValue(''); 
       }
